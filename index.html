@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Jorge's Cleaning LLC - Professional residential and commercial cleaning services in Madison, WI. Houses, Buildings, Offices. Free quotes available."
+    />
+    
+    <title>Jorge's Cleaning LLC</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar" id="navbar">
+      <div class="navbar__container">
+        <a href="#" class="navbar__logo">
+          <img src="logo-con-fondo.jpg" alt="Jorge's Cleaning Logo" class="navbar__logo__img" />
+        </a>
+
+        <button
+          class="navbar__hamburger"
+          id="hamburger"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="navbar__menu" id="navMenu">
+          <a href="#services" class="navbar__link" data-nav="services">Services</a>
+          <a href="#about" class="navbar__link" data-nav="about">About</a>
+          <a href="#contact" class="navbar__link" data-nav="contact">Contact</a>
+          <div class="navbar__cta">
+            <a
+              href="https://wa.me/16085208779?text=Hi%2C%20I%27d%20like%20a%20free%20quote!"
+              class="btn btn--primary"
+              aria-label="Get a free quote on WhatsApp"
+              >Free Quote</a
+            >
+          </div>
+        </div>
+
+        <div class="navbar__nav">
+          <a href="#services" class="navbar__link" data-nav="services">Services</a>
+          <a href="#about" class="navbar__link" data-nav="about">About</a>
+          <a href="#contact" class="navbar__link" data-nav="contact">Contact</a>
+          <div class="navbar__cta">
+            <a
+              href="https://wa.me/16085208779?text=Hi%2C%20I%27d%20like%20a%20free%20quote!"
+              class="btn btn--primary"
+              aria-label="Get a free quote on WhatsApp"
+              >Free Quote</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section class="hero" id="hero">
+      <div class="hero__container">
+        <div class="hero__content">
+          <div class="hero__badge reveal">
+            📍 Madison, WI Area
+          </div>
+          <h1 class="hero__title reveal">Clean Spaces. Real Results.</h1>
+          <p class="hero__subtitle reveal">
+            Customized cleaning solutions for homes and businesses. Professional service. Fair prices. Free quotes.
+          </p>
+
+          <div class="hero__cta-group reveal">
+            <div class="hero__cta-row">
+              <a href="tel:6085208779" class="btn btn--call btn--lg" aria-label="Call us at (608) 520-8779">
+                📞 Call Now
+              </a>
+              <a
+                href="https://wa.me/16085208779?text=Hi%2C%20I%27d%20like%20a%20free%20quote!"
+                class="btn btn--whatsapp btn--lg"
+                aria-label="Message us on WhatsApp"
+              >
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="white" style="display: inline-block; margin-right: 8px; vertical-align: middle;">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5.5 11c0 2.85-2.32 5.15-5.15 5.15-.87 0-1.69-.23-2.4-.63l-2.85.73.74-2.85c-.4-.71-.63-1.53-.63-2.4 0-2.85 2.32-5.15 5.15-5.15S17.5 11.15 17.5 13z" stroke="white" stroke-width="0.5"/>
+                </svg>
+                WhatsApp
+              </a>
+              <a href="sms:6085208779?body=Hi%2C%20I%27d%20like%20a%20free%20quote!" class="btn btn--sms btn--lg"
+                aria-label="Send us a text message"
+              >
+                📱 Text Us
+              </a>
+            </div>
+          </div>
+
+          <div class="hero__stats reveal">
+            <div class="stat-pill"> 5★ Rated</div>
+            <div class="stat-pill"> FREE Quote</div>
+            <div class="stat-pill"> Fast Response</div>
+          </div>
+        </div>
+
+        <div class="hero__card reveal">
+          <div class="hero__card__label">Call Us Today</div>
+          <a href="tel:6085208779" class="hero__card__phone-link">
+            <div class="hero__card__phone">(608) 520-8779</div>
+          </a>
+          <div class="hero__card__divider"></div>
+          <div class="hero__card__label">Alternative Number</div>
+          <a href="tel:6088003451" class="hero__card__phone-link">
+            <div class="hero__card__phone" style="font-size: var(--text-lg)">(608) 800-3451</div>
+          </a>
+          <div class="hero__card__divider"></div>
+            <div class="hero__card__label">Email Us</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SERVICES SECTION ========== -->
+    <section class="services" id="services">
+      <div class="services__container">
+        <div class="services__header reveal">
+          <span class="section-tag">What We Do</span>
+          <h2 class="section-title">Every Corner. Spotless.</h2>
+        </div>
+
+        <div class="services__grid">
+          <div class="service-card reveal">
+            <div class="service-card__icon">🏠</div>
+            <h3 class="service-card__title">General Cleaning</h3>
+            <p class="service-card__desc">
+              Professional cleaning for your home or office, covering all the essentials for a fresh, clean space.
+            </p>
+          </div>
+
+          <div class="service-card reveal reveal--delay">
+            <div class="service-card__icon">✨</div>
+            <h3 class="service-card__title">Deep Cleaning</h3>
+            <p class="service-card__desc">
+              Thorough scrubbing and sanitizing of every surface. We get into the details others miss.
+            </p>
+          </div>
+
+          <div class="service-card reveal reveal--delay2">
+            <div class="service-card__icon">💧</div>
+            <h3 class="service-card__title">Pressure Washing</h3>
+            <p class="service-card__desc">
+              Clean driveways, patios, and exterior surfaces. We make your property shine from the outside.
+            </p>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-card__icon">📅</div>
+            <h3 class="service-card__title">Regular Cleaning</h3>
+            <p class="service-card__desc">
+              Weekly, bi-weekly, or monthly recurring cleaning. Consistency that keeps your space perfect.
+            </p>
+          </div>
+
+          <div class="service-card reveal reveal--delay">
+            <div class="service-card__icon">🗓️</div>
+            <h3 class="service-card__title">Flexible Scheduling</h3>
+            <p class="service-card__desc">
+              We work around your schedule. Any time, any day. Morning, afternoon, evening — we're here for you.
+            </p>
+          </div>
+
+          <div class="service-card service-card--cta reveal reveal--delay2">
+            <div class="service-card__icon">💬</div>
+            <h3 class="service-card__title">Custom Quote</h3>
+            <p class="service-card__desc">
+              Tell us what you need. We'll provide a personalized quote tailored to your space and budget.
+            </p>
+            <a
+              href="https://wa.me/16085208779?text=Hi%2C%20I%27d%20like%20a%20free%20quote!"
+              class="btn btn--white"
+              style="margin-top: auto; background-color: var(--color-white); color: var(--color-primary)"
+              aria-label="Request a custom quote on WhatsApp"
+            >
+              Get Your Quote
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT SECTION ========== -->
+    <section class="about" id="about">
+      <div class="about__container">
+        <div class="about__content reveal">
+          <span class="section-tag">Why Choose Us</span>
+          <h2 class="section-title">Local. Trusted. Thorough.</h2>
+
+          <p class="about__text">
+            We're a locally owned cleaning company serving the Madison area for years. We understand what it takes to
+            keep homes and offices clean, and we take pride in our work. Every team member is trained, vetted, and
+            committed to your satisfaction.
+          </p>
+
+          <p class="about__text">
+            We don't use a cookie-cutter approach. We listen to your needs and customize our service accordingly.
+            Whether you need a one-time deep clean or ongoing maintenance, we've got you covered.
+          </p>
+
+          <div class="about__badges">
+            <div class="about__badge-item">
+              <div class="about__badge-icon">📍</div>
+              <div class="about__badge-label">Madison WI</div>
+            </div>
+            <div class="about__badge-item">
+              <div class="about__badge-icon">🤝</div>
+              <div class="about__badge-label">Locally Owned</div>
+            </div>
+            <div class="about__badge-item">
+              <div class="about__badge-icon">💯</div>
+              <div class="about__badge-label">Free Quotes</div>
+            </div>
+            <div class="about__badge-item">
+              <div class="about__badge-icon">⚡</div>
+              <div class="about__badge-label">Fast Response</div>
+            </div>
+          </div>
+
+          <div class="about__quote-card">
+            <div class="about__quote-text">"Happiness smells like a clean house."</div>
+            <div class="about__quote-card__icon">💚</div>
+          </div>
+
+          <div class="about__contact-block">
+            <div class="about__contact-title">Get In Touch</div>
+            <div class="about__contact-line">
+              <div class="about__contact-icon">📞</div>
+              <a href="tel:6085208779" class="about__contact-link">(608) 520-8779</a>
+            </div>
+            <div class="about__contact-line">
+              <div class="about__contact-icon">📱</div>
+              <a href="tel:6088003451" class="about__contact-link">(608) 800-3451</a>
+            </div>
+            <div class="about__contact-line">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" style="margin-right: 8px;">
+                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+              </svg>
+              <a href="mailto:jorgescleaning@outlook.com" class="about__contact-link">jorgescleaning@outlook.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT CTA SECTION ========== -->
+    <section class="contact-cta" id="contact">
+      <div class="contact-cta__container">
+        <h2 class="contact-cta__title reveal">Ready for a spotless space?</h2>
+        <p class="contact-cta__subtitle reveal">The quote is completely free.</p>
+
+        <div class="contact-cta__buttons reveal">
+          <a href="tel:6085208779" class="btn btn--lg" aria-label="Call us at (608) 520-8779">
+            📞 Call
+          </a>
+          <a href="tel:6088003451" class="btn btn--lg" aria-label="Call us at (608) 800-3451">
+            📞 Call Alt
+          </a>
+          <a
+            href="https://wa.me/16085208779?text=Hi%2C%20I%27d%20like%20a%20free%20quote!"
+            class="btn btn--whatsapp btn--lg"
+            aria-label="Message us on WhatsApp"
+          >
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="white" style="display: inline-block; margin-right: 8px; vertical-align: middle;">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5.5 11c0 2.85-2.32 5.15-5.15 5.15-.87 0-1.69-.23-2.4-.63l-2.85.73.74-2.85c-.4-.71-.63-1.53-.63-2.4 0-2.85 2.32-5.15 5.15-5.15S17.5 11.15 17.5 13z" stroke="white" stroke-width="0.5"/>
+            </svg>
+            WhatsApp
+          </a>
+          <a href="sms:6085208779?body=Hi%2C%20I%27d%20like%20a%20free%20quote!" class="btn btn--sms btn--lg"
+            aria-label="Send us a text message"
+          >
+            📱 Text
+          </a>
+          <a href="mailto:jorgescleaning@outlook.com" class="btn btn--lg" style="background-color: rgba(255, 255, 255, 0.2); border: 2px solid var(--color-white);"
+            aria-label="Email us"
+          >
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" style="display: inline-block; margin-right: 6px;">
+              <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+            </svg>
+            Email
+          </a>
+        </div>
+
+        <div class="contact-cta__email reveal">
+          Email: <a href="mailto:jorgescleaning@outlook.com" class="contact-cta__email-link">jorgescleaning@outlook.com</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <img src="logo-con-fondo.jpg" alt="Jorge's Cleaning Logo" class="footer__logo__img" />
+          </div>
+          <p class="footer__tagline">Houses, Buildings, Offices.</p>
+        </div>
+
+        <div class="footer__contact">
+          <div class="footer__contact-title">Phone</div>
+          <div class="footer__contact-item">
+            <span>📞</span>
+            <a href="tel:6085208779" class="footer__contact-link">(608) 520-8779</a>
+          </div>
+          <div class="footer__contact-item">
+            <span>📱</span>
+            <a href="tel:6088003451" class="footer__contact-link">(608) 800-3451</a>
+          </div>
+        </div>
+
+        <div class="footer__contact">
+          <div class="footer__contact-title">Email</div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" style="margin-right: 8px;">
+              <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+            </svg>
+            <a href="mailto:jorgescleaning@outlook.com" class="footer__contact-link">jorgescleaning@outlook.com</a>
+          </div>
+        </div>
+
+        <div class="footer__contact">
+          <div class="footer__contact-title">Follow Us</div>
+          <div class="footer__contact-item">
+            <a href="https://www.facebook.com/JORGESCLEANINGLLC" target="_blank" class="footer__contact-link" aria-label="Follow us on Facebook" style="display: inline-flex; align-items: center; gap: 6px;">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+              Facebook
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        © 2024 Jorge's Cleaning LLC · Madison, WI · All rights reserved.
+      </div>
+    </footer>
+
+    <!-- ========== FLOATING WHATSAPP BUTTON ========== -->
+    <a
+      href="https://wa.me/16085208779?text=Hi%2C%20I%27d%20like%20a%20free%20quote!"
+      class="fab-whatsapp"
+      aria-label="Chat with us on WhatsApp"
+      title="Chat with us on WhatsApp"
+    >
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="white" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5.5 11c0 2.85-2.32 5.15-5.15 5.15-.87 0-1.69-.23-2.4-.63l-2.85.73.74-2.85c-.4-.71-.63-1.53-.63-2.4 0-2.85 2.32-5.15 5.15-5.15S17.5 11.15 17.5 13z" stroke="white" stroke-width="0.5"/>
+      </svg>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

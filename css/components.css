@@ -1,0 +1,323 @@
+/* Reusable Components */
+
+/* Button Base */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  padding: var(--space-md) var(--space-lg);
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  font-size: var(--text-sm);
+  transition: all var(--transition-base);
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  border: 2px solid transparent;
+  text-decoration: none;
+  font-family: var(--font-body);
+}
+
+.btn:hover {
+  transform: scale(1.02);
+}
+
+/* Button Variants */
+.btn--primary {
+  background-color: var(--color-accent);
+  color: var(--color-dark);
+}
+
+.btn--primary:hover {
+  background-color: #25c5b3;
+  box-shadow: var(--shadow-lg);
+}
+
+.btn--outline {
+  background-color: transparent;
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.btn--outline:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.btn--whatsapp {
+  background-color: var(--color-whatsapp);
+  color: var(--color-white);
+}
+
+.btn--whatsapp:hover {
+  background-color: #22c253;
+  box-shadow: var(--shadow-lg);
+}
+
+.btn--sms {
+  background-color: var(--color-sms);
+  color: var(--color-white);
+}
+
+.btn--sms:hover {
+  background-color: #0063cc;
+  box-shadow: var(--shadow-lg);
+}
+
+.btn--call {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.btn--call:hover {
+  background-color: #135555;
+  box-shadow: var(--shadow-lg);
+}
+
+.btn--email {
+  background-color: var(--color-gray);
+  color: var(--color-white);
+}
+
+.btn--email:hover {
+  background-color: #4b5563;
+  box-shadow: var(--shadow-lg);
+}
+
+/* Button Sizes */
+.btn--sm {
+  padding: var(--space-sm) var(--space-md);
+  font-size: var(--text-xs);
+}
+
+.btn--lg {
+  padding: var(--space-lg) var(--space-2xl);
+  font-size: var(--text-base);
+}
+
+.btn--xl {
+  padding: var(--space-2xl) var(--space-3xl);
+  font-size: var(--text-lg);
+}
+
+/* Section Tag */
+.section-tag {
+  display: inline-block;
+  font-size: var(--text-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--color-accent);
+  margin-bottom: var(--space-md);
+  font-family: var(--font-display);
+}
+
+/* Section Titles */
+.section-title {
+  font-family: var(--font-display);
+  font-size: var(--text-4xl);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-dark);
+  margin-bottom: var(--space-lg);
+  letter-spacing: -0.02em;
+}
+
+@media (min-width: 768px) {
+  .section-title {
+    font-size: var(--text-5xl);
+  }
+}
+
+.section-sub {
+  font-size: var(--text-lg);
+  color: var(--color-gray);
+  line-height: 1.6;
+  margin-bottom: var(--space-2xl);
+}
+
+/* Accent Text */
+.accent {
+  color: var(--color-accent);
+}
+
+/* Service Card */
+.service-card {
+  background-color: var(--color-white);
+  border-radius: var(--radius-xl);
+  padding: var(--space-2xl);
+  border: 1px solid var(--color-gray-light);
+  transition: all var(--transition-slow);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-xl);
+  border-color: var(--color-accent);
+}
+
+.service-card__icon {
+  font-size: 2.5rem;
+}
+
+.service-card__title {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--color-dark);
+}
+
+.service-card__desc {
+  font-size: var(--text-sm);
+  color: var(--color-gray);
+  line-height: 1.6;
+}
+
+.service-card--cta {
+  background: linear-gradient(135deg, var(--color-primary), #155555);
+  color: var(--color-white);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.service-card--cta .service-card__title {
+  color: var(--color-white);
+}
+
+.service-card--cta .service-card__desc {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Badge Item */
+.badge-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-dark);
+}
+
+.badge-item__icon {
+  font-size: 1.5rem;
+}
+
+/* Contact Line */
+.contact-line {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  font-size: var(--text-base);
+  color: var(--color-dark);
+  transition: all var(--transition-base);
+}
+
+.contact-line:hover {
+  color: var(--color-accent);
+}
+
+.contact-line__icon {
+  font-size: 1.25rem;
+  min-width: 1.5rem;
+}
+
+.contact-line__link {
+  transition: color var(--transition-base);
+}
+
+.contact-line__link:hover {
+  color: var(--color-accent);
+}
+
+/* Stat Pill */
+.stat-pill {
+  background-color: rgba(45, 212, 191, 0.1);
+  border: 2px solid var(--color-accent);
+  border-radius: var(--radius-full);
+  padding: var(--space-sm) var(--space-xl);
+  font-weight: 700;
+  font-size: var(--text-sm);
+  color: var(--color-primary);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  transition: all var(--transition-base);
+}
+
+.stat-pill:hover {
+  background-color: var(--color-accent);
+  color: var(--color-dark);
+}
+
+/* Quote Card */
+.about__quote-card {
+  background: linear-gradient(135deg, var(--color-primary), #155555);
+  border-radius: var(--radius-xl);
+  padding: var(--space-2xl);
+  color: var(--color-white);
+  text-align: center;
+  margin-top: var(--space-3xl);
+}
+
+.about__quote-card__text {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: var(--space-lg);
+}
+
+.about__quote-card__icon {
+  font-size: 2rem;
+}
+
+/* Hero Card */
+.hero__card {
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: var(--radius-xl);
+  padding: var(--space-2xl);
+  box-shadow: var(--shadow-xl);
+}
+
+.hero__card__label {
+  font-size: var(--text-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-gray);
+  margin-bottom: var(--space-md);
+  letter-spacing: 0.1em;
+}
+
+.hero__card__phone {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: var(--space-sm);
+}
+
+.hero__card__phone-link {
+  transition: color var(--transition-base);
+}
+
+.hero__card__phone-link:hover {
+  color: var(--color-accent);
+}
+
+.hero__card__divider {
+  height: 1px;
+  background-color: var(--color-gray-light);
+  margin: var(--space-lg) 0;
+}
+
+.hero__card__subtext {
+  font-size: var(--text-sm);
+  color: var(--color-gray);
+}
